@@ -1,0 +1,28 @@
+# ====================
+# | Model parameters |
+# ====================
+
+# Continuous equation parameters
+ &PARM01
+ &
+
+# Elliptic solver parameters
+ &PARM02
+ &
+
+# Time stepping parameters
+ &PARM03
+ &
+
+# Gridding parameters
+ &PARM04
+ usingSphericalPolarGrid=.TRUE., #keep
+ delX=240*0.083333, 	#change rows x fraction 
+ delY=260*0.0625,	#change cols x fraction
+ xgOrigin=-135,		#change x origin
+ ygOrigin=29,		#change y origin
+ &
+
+# Input datasets
+ &PARM05
+ &
