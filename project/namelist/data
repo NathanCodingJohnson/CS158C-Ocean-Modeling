@@ -50,4 +50,10 @@
 
 # Input datasets
  &PARM05
+ bathyFile = 'Pacific_bathymetry.bin',
+ hydrogThetaFile = 'THETA_IC.bin',
+ hydrogSaltFile = 'SALT_IC.bin',
+ uVelInitFile = 'UVEL_IC.bin',
+ vVELInitFile = 'VVEL_IC.bin',
+ pSurfInitFile = 'ETAN_IC.bin',
  &
