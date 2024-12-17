@@ -35,11 +35,11 @@
 
 # Gridding parameters
  &PARM04
- usingSphericalPolarGrid=.TRUE., #keep
- delX=352*0.25, 	#change rows x fraction 
- delY=512*0.25,	#change cols x fraction
- xgOrigin=115,		#change x origin
- ygOrigin=23,		#change y origin
+ usingSphericalPolarGrid=.TRUE.,
+ delX=512*0.25,
+ delY=352*0.25,
+ xgOrigin=115,
+ ygOrigin=-23,
  delR = 10.00, 10.00, 10.00, 10.00, 10.00, 10.00, 10.00, 10.01,
         10.03, 10.11, 10.32, 10.80, 11.76, 13.42, 16.04, 19.82, 24.85,
         31.10, 38.42, 46.50, 55.00, 63.50, 71.58, 78.90, 85.15, 90.18,
@@ -50,10 +50,10 @@
 
 # Input datasets
  &PARM05
- bathyFile = 'Pacific_bathymetry.bin',
+ bathyFile = 'CA_bathymetry.bin',
  hydrogThetaFile = 'THETA_IC.bin',
  hydrogSaltFile = 'SALT_IC.bin',
  uVelInitFile = 'UVEL_IC.bin',
- vVELInitFile = 'VVEL_IC.bin',
+ vVelInitFile = 'VVEL_IC.bin',
  pSurfInitFile = 'ETAN_IC.bin',
  &
