@@ -39,6 +39,11 @@
   frequency(5) = 86400.,
   levels(:,5) = 1,
 #
+# actual main diag
+
+ fields(1,6) ='ETAN    ',
+ fileName(6) = 'diags/EtaN_hrly_snap/EtaN_hrly_snap',
+ frequency(6) = 3600.,
  &
 
 # Parameter for Diagnostics of per level statistics:
