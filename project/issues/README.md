@@ -15,3 +15,18 @@ Despite getting a (FC_CHECK 5/5), when running make depend in the build director
 ![unnamed](https://github.com/user-attachments/assets/abd7c7b7-030b-4e56-ba35-2351b37a9016)
 If I then try to run make, I end up with a bunch of errors regarding being unable to find various mpi files and the mitgcmuv executable is not created.
 ![unnamed](https://github.com/user-attachments/assets/f78411a9-980a-4f7a-b0c3-9a3eb0aad73c)
+
+
+new run error
+
+## Issue Summary
+Upon sbatch cs185c00.slm, I am no longer getting the same errors complaining about number of processors not being correct, but I am now getting a series of Fortran runtime errors: Repeat count too large for namelist object delx At line 4332 of file ini_parms.f (unit = 11, file = 'scratch1.00000000x') with x ranging from 0 to 7
+
+
+unlike previous errors, 8 full STDERR files and 8 STDOUT files are created along with 8 scratch1.00000000x files
+
+the STDERR files all are empty so they provide no helpful information
+
+The STDOUT files shows the execution of SIZE.h that includes the proper sizing and processors being used but then stopps in the middle of the data file once INI_PARAMS starts to read PARM04. It should also be noted that when ran in the run-tsunami folder, the STDOUT file does not show the change to the data file that specifies the pSurfaceInitFile to be ETAN_with_tsunami_IC.bin and just shows the ETAN_IC.bin that is used in the pain run folder
+
+the scratch.00000000x files just show the data file, also with the incorrect ETAN file in the run-tsunami folder
