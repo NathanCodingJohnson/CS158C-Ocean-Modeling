@@ -47,7 +47,7 @@ sbatch cs185c00.slm
 ```
 
 ### Step 4.2: Run the model with tsunami
-Next, run the model without wind to complete the experiment. Again, link everything from `input` and `code` to a directory called `run_tsunami`. Then, edit the `data` file to point to the modified ETAN file Created in the last part of the Creating Initial Conditions.ipynb. Then, submit the job script again to rerun the model.
+Next, run the model without wind to complete the experiment. Again, link everything from `input` and `code` to a directory called `run-tsunami`. Then, edit the `data` file to point to the modified ETAN file Created in the last part of the Creating Initial Conditions.ipynb. Then, submit the job script again to rerun the model.
 
 ### Step 5: Analyze the Results
 There are two notebooks provided for analysis:
